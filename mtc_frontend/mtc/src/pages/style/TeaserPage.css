@@ -1,0 +1,116 @@
+body {
+  overflow-x: hidden;
+  background-color: rgb(53, 157, 209);
+}
+
+
+.content{
+  position: static;
+}
+
+.content .img{
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 700px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img{
+  position: absolute;
+}
+
+.content .front{
+  width: 75%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: all ease 1s;
+}
+
+.content .back{
+  width: 95%;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: .3;
+  z-index: -1;
+  transition: all ease 1s 0.2s;
+}
+
+.content .text{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content .text span{
+  font-size: 70px;
+  font-weight: 700;
+  color: #000;
+  display: inline-block;
+  margin: 0 20px 0;
+  transition: all ease 0.5s;
+}
+
+.content .text span{
+  color: #000;
+  text-shadow: 3px 3px 0 rgb(225, 255, 0);
+}
+
+/* .content .text span:hover{
+  color: #000;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(255, 251, 0);
+} */
+
+.content .text .line{
+  white-space: nowrap;
+  animation: infiniteText 20s linear infinite;
+  cursor: pointer;
+  animation-play-state: running;
+  margin-bottom: 20px;
+}
+
+@keyframes infiniteText {
+  0%{
+      transform: translateX(0%);
+  }
+  100%{
+      transform: translateX(-100%);
+  }
+}
+
+.content .text .line2{
+  animation-direction: reverse;
+}
+
+/* .content .text .line2 span{
+  margin: 0 20px 0;
+}
+
+.content .text .line3 span{
+  margin: 0 20px 0;
+} */
+
+.content .text .line:hover{
+  animation-play-state: paused;
+}
+
+.bottom{
+  text-align: center;
+}
+
+.bottom h4{
+  font-size: 20px;
+  letter-spacing: 2px;
+}

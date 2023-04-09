@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "dongle";
+  src: url("../../assets/fonts/Dongle/Dongle-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.evaluatebutton {
+  font-family: dongle;
+}
+
+.evaluatecount {
+  font-family: dongle;
+  font-weight: 500;
+
+}

@@ -1,0 +1,42 @@
+.post-figure {
+  display: flex;
+  width: 100%;
+}
+
+.each-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.each-post-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.good-bad-view-icons {
+  display: flex;
+}
+
+.post-information-icon {
+  width: 20px;
+  height: 20px;
+  padding: 0 10px 0 30px;
+}
+
+.empty-article {
+  margin: 15px 5px;
+}
+
+.right-button {
+  margin-left: auto;
+}
+
+.right-button-container {
+  display: flex;
+}
+
+.each-post-data-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
